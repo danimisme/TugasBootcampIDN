@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="198dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/fifamobile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="Fifa Mobile"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image" />
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="4dp"
+            android:text="2022-02-02"
+            android:textColor="@color/abu"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textJudul" />
+
+        <TextView
+            android:id="@+id/textRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="26dp"
+            android:drawableLeft="@drawable/star"
+            android:text="4.7"
+            android:textColor="@color/yellow"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image" />
+
+        <TextView
+            android:id="@+id/textGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="26dp"
+            android:text="Sport"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDate" />
+
+        <TextView
+            android:id="@+id/textGenre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="26dp"
+            android:text="Football"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/textGenre"
+            app:layout_constraintTop_toBottomOf="@+id/textDate" />
+
+        <TextView
+            android:id="@+id/textAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Game"
+            android:textColor="@color/white"
+            android:layout_marginTop="18dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/textGenre"
+            app:layout_constraintTop_toBottomOf="@id/textGenre" />
+
+        <TextView
+            android:id="@+id/textAboutDetail"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:lineSpacingExtra="1.2dp"
+            android:text="FIFA Mobile is an association football simulation video game developed by EA Mobile and EA Canada and published by EA Sports for iOS and Android.
+            &#xA; &#xA; It was released on 11 October 2016 as a replacement to the FIFA Ultimate Team mobile games, for iOS and Android.
+            &#xA; &#xA;Microsoft Windows was also included until 2017. It was announced on August 16, 2016, during Gamescom 2016.
+            &#xA;&#xA;The game introduces a new VS Attack mode in which players mostly play the offensive stages of a match. They also had to defend counter-attacks from the opposition (until before the 6th season).
+            &#xA;&#xA;The VS Attack mode features an asynchronous turn-based multiplayer. The game also features Live Events themed on recent real world events, as well as mini games based on skills such as shooting, passing, dribbling and goalkeeping. It also includes events based on the Champions League and other different leagues throughout the world."
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textAbout" />
+
+        <TextView
+            android:id="@+id/textDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_marginStart="18dp"
+            android:text="Developer"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textAboutDetail" />
+
+        <TextView
+            android:id="@+id/textDev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EA Mobile"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="18dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDeveloper" />
+
+        <TextView
+            android:id="@+id/textPublisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="18dp"
+            android:text="Publisher"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textDev" />
+        <TextView
+            android:id="@+id/textPub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EA Sport"
+            android:textColor="@color/red"
+            android:textSize="17sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="18dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPublisher" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="22dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/textPub"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="22dp"
+            tools:listitem="@layout/screenshot" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="28dp"
+            android:backgroundTint="@color/green"
+            android:gravity="center"
+            android:text="Add to Favorite"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            app:layout_constraintCircleRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
